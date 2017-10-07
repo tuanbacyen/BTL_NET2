@@ -31,7 +31,7 @@ namespace Net2.Forms
                             kh.TenKhoa
                         };
             sbTable.Append("<table class='table table-striped table-bordered table-hover'>");
-            sbTable.Append("<tr><th>STT</th><th>Mã Khoa</th><th>Tên Khoa</th></tr>");
+            sbTable.Append("<tr><th>STT</th><th>Mã Khoa</th><th>Tên Khoa</th><th>Tùy Chỉnh</th></tr>");
             if (query.Count() > 0)
             {
                 foreach (var item in query)
@@ -40,11 +40,16 @@ namespace Net2.Forms
                     sbTable.Append("<td>" + item.STT + "</td>");
                     sbTable.Append("<td>" + item.MaKhoa + "</td>");
                     sbTable.Append("<td>" + item.TenKhoa + "</td>");
+                    sbTable.Append("<td><a href='frmKhoaChuQuanCU.aspx?id=" + item.MaKhoa + "' class='btn btn-success'>Sửa</a><asp:Button ID='btnXoa' runat='server' Text='Xóa' CssClass='btn btn - danger btn - block' OnClick='btnXoa_Click' /></td>");
                     sbTable.Append("</tr>");
                 }
             }
             sbTable.Append("</table >");
             tblKhoa.Controls.Add(new Literal { Text = sbTable.ToString() });
+        }
+        protected void btnXoa_Click(object sender, EventArgs e)
+        {
+            
         }
     }
 }

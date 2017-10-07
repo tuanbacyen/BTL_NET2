@@ -13,13 +13,13 @@ namespace Net2.Forms {
     public partial class frmKhoaChuQuanCU {
         
         /// <summary>
-        /// title control.
+        /// labTitle control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label title;
+        protected global::System.Web.UI.WebControls.Label labTitle;
         
         /// <summary>
         /// txtMaKhoa control.

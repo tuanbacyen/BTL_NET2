@@ -72,12 +72,12 @@
     <Content Include="Forms\frmKhoaChuQuanCU.aspx" />
     <Content Include="Forms\frmNganhHoc.aspx" />
     <Content Include="Forms\frmNganhHocCU.aspx" />
+    <Content Include="Forms\frmMaster.Master" />
     <Content Include="Model\QuanLyDoanVien.dbml">
       <Generator>MSLinqToSQLGenerator</Generator>
       <LastGenOutput>QuanLyDoanVien.designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </Content>
-    <Content Include="Forms\frmMaster.Master" />
     <None Include="Model\QuanLyDoanVien.dbml.layout">
       <DependentUpon>QuanLyDoanVien.dbml</DependentUpon>
     </None>

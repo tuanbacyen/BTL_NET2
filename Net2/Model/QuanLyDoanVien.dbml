@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?><Database Name="QuanLyDoanVien" Class="QuanLyDoanVienDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
-  <Connection Mode="WebSettings" ConnectionString="Data Source=TUANPHAM;Initial Catalog=QuanLyDoanVien;Integrated Security=True" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="QuanLyDoanVienConnectionString" Provider="System.Data.SqlClient" />
+  <Connection Mode="WebSettings" ConnectionString="Data Source=DESKTOP-I274HPO\SQLEXPRESS;Initial Catalog=QuanLyDoanVien;Integrated Security=True" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="QuanLyDoanVienConnectionString" Provider="System.Data.SqlClient" />
   <Table Name="dbo.CanBoVPDoan" Member="CanBoVPDoans">
     <Type Name="CanBoVPDoan">
       <Column Name="CanBoDoanID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsDbGenerated="true" CanBeNull="false" />
@@ -14,6 +14,14 @@
       <Association Name="CanBoVPDoan_ThongTinHoatDongDoan" Member="ThongTinHoatDongDoans" ThisKey="MaCanBoDoan" OtherKey="MaCanBoDoan" Type="ThongTinHoatDongDoan" />
       <Association Name="CanBoVPDoan_ThongTinNopDoanPhi" Member="ThongTinNopDoanPhis" ThisKey="MaCanBoDoan" OtherKey="MaCanBoDoan" Type="ThongTinNopDoanPhi" />
       <Association Name="ChucVu_CanBoVPDoan" Member="ChucVu" ThisKey="MaChucVu" OtherKey="MaChucVu" Type="ChucVu" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TinhTrangHocTap" Member="TinhTrangHocTaps">
+    <Type Name="TinhTrangHocTap">
+      <Column Name="TinhTrangHocTapID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="MaTinhTrangHocTap" Type="System.String" DbType="NVarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="TenTinhTrangHocTap" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
+      <Association Name="TinhTrangHocTap_SinhVien" Member="SinhViens" ThisKey="MaTinhTrangHocTap" OtherKey="MaTinhTrangHocTap" Type="SinhVien" />
     </Type>
   </Table>
   <Table Name="dbo.ChucVu" Member="ChucVus">
@@ -178,57 +186,4 @@
       <Association Name="SinhVien_ThongTinNopDoanPhi" Member="SinhVien" ThisKey="MaSinhVien" OtherKey="MaSinhVien" Type="SinhVien" IsForeignKey="true" />
     </Type>
   </Table>
-  <Table Name="dbo.TinhTrangHocTap" Member="TinhTrangHocTaps">
-    <Type Name="TinhTrangHocTap">
-      <Column Name="TinhTrangHocTapID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsDbGenerated="true" CanBeNull="false" />
-      <Column Name="MaTinhTrangHocTap" Type="System.String" DbType="NVarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
-      <Column Name="TenTinhTrangHocTap" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
-      <Association Name="TinhTrangHocTap_SinhVien" Member="SinhViens" ThisKey="MaTinhTrangHocTap" OtherKey="MaTinhTrangHocTap" Type="SinhVien" />
-    </Type>
-  </Table>
-  <Table Name="dbo.v_SVChuyenLop" Member="v_SVChuyenLops">
-    <Type Name="v_SVChuyenLop">
-      <Column Name="HoVaTenKhaiSinh" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
-      <Column Name="MaSinhVien" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
-      <Column Name="LopCu" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
-      <Column Name="NoiChuyen" Type="System.String" DbType="NVarChar(500) NOT NULL" CanBeNull="false" />
-      <Column Name="NgayChuyen" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
-    </Type>
-  </Table>
-  <Table Name="dbo.V_SVChuyenTruong" Member="V_SVChuyenTruongs">
-    <Type Name="V_SVChuyenTruong">
-      <Column Name="HoVaTenKhaiSinh" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
-      <Column Name="MaSinhVien" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
-      <Column Name="TruongCu" Type="System.String" DbType="NVarChar(128) NOT NULL" CanBeNull="false" />
-      <Column Name="NoiChuyen" Type="System.String" DbType="NVarChar(500) NOT NULL" CanBeNull="false" />
-      <Column Name="NgayChuyen" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
-    </Type>
-  </Table>
-  <Table Name="dbo.v_SVNoDoanPhi" Member="v_SVNoDoanPhis">
-    <Type Name="v_SVNoDoanPhi">
-      <Column Name="MaSinhVien" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
-      <Column Name="HoVaTenKhaiSinh" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
-      <Column Name="TenLop" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
-      <Column Name="SoTien" Type="System.Decimal" DbType="Money NOT NULL" CanBeNull="false" />
-      <Column Name="NgayNop" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
-    </Type>
-  </Table>
-  <Table Name="dbo.v_TongThuChi" Member="v_TongThuChis">
-    <Type Name="v_TongThuChi">
-      <Column Name="TongThu" Type="System.Single" DbType="Real" CanBeNull="true" />
-      <Column Name="TongNo" Type="System.Single" DbType="Real" CanBeNull="true" />
-      <Column Name="TongTienDuKien" Type="System.Single" DbType="Real" CanBeNull="true" />
-      <Column Name="PhanTramThu" Type="System.Single" DbType="Real" CanBeNull="true" />
-      <Column Name="NgayNop" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
-    </Type>
-  </Table>
-  <Function Name="dbo.fc_TongTienThu" Method="fc_TongTienThu" IsComposable="true">
-    <Return Type="System.Single" />
-  </Function>
-  <Function Name="dbo.fc_TongTienNo" Method="fc_TongTienNo" IsComposable="true">
-    <Return Type="System.Single" />
-  </Function>
-  <Function Name="dbo.fc_TongTienDuKien" Method="fc_TongTienDuKien" IsComposable="true">
-    <Return Type="System.Single" />
-  </Function>
 </Database>

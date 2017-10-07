@@ -1,7 +1,7 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Forms/frmMaster.Master" AutoEventWireup="true" CodeBehind="frmKhoaChuQuanCU.aspx.cs" Inherits="Net2.Forms.frmKhoaChuQuanCU" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
-    <asp:Label ID="title" runat="server" Text="Thêm Mới Khoa"></asp:Label>
+    <asp:Label ID="labTitle" runat="server" Text="Thêm Mới Khoa"></asp:Label>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="content" runat="server">
     <div class="row">
@@ -25,7 +25,7 @@
                         <tr>
                             <td style="width: 150px">
                                 <div style="width: 95%; float: left;">
-                                    <asp:Button ID="btnThem" runat="server" Text="Lưu" CssClass="btn btn-lg btn-success btn-block" PostBackUrl="~/Forms/frmKhoaChuQuan.aspx" ValidationGroup="error" />
+                                    <asp:Button ID="btnThem" runat="server" Text="Lưu" CssClass="btn btn-lg btn-success btn-block" OnClick="btnThem_Click" ValidationGroup="error" />
                                 </div>
                             </td>
                             <td style="width: 150px;">
