@@ -61,5 +61,11 @@ namespace Net2.Forms
             DisplayOnTable(txtSearchKhoa.Text);
             txtSearchKhoa.Focus();
         }
+        protected void btnReset_Click(Object sender, EventArgs e)
+        {
+            txtSearchKhoa.Text = "";
+            DisplayOnTable("");
+            txtSearchKhoa.Focus();
+        }
     }
 }

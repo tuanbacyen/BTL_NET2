@@ -87,13 +87,13 @@
                                     <a href="#">Chức Vụ</a>
                                 </li>
                                 <li>
-                                    <a href="#">Loại Hệ Đào Tạo</a>
+                                    <a href="frmHeDaoTao.aspx">Loại Hệ Đào Tạo</a>
                                 </li>
                                 <li>
                                     <a href="#">Tình Trạng Học Tập</a>
                                 </li>
                                 <li>
-                                    <a href="#">Quản Lý Lớp</a>
+                                    <a href="frmLopChuQuan.aspx">Quản Lý Lớp</a>
                                 </li>
                                 <li>
                                     <a href="#">Lớp Dự Bị Đảng</a>
@@ -118,7 +118,7 @@
                                     <a href="#">Hoạt Động Đoàn</a>
                                 </li>
                                 <li>
-                                    <a href="#">Sổ Đoàn</a>
+                                    <a href="frmSoDoan.aspx">Sổ Đoàn</a>
                                 </li>
                                 <li>
                                     <a href="#">Đóng Đoàn Phí</a>

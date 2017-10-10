@@ -31,19 +31,31 @@ namespace Net2.Forms
             sbTable.Append("<table class='table table-striped table-bordered table-hover'>");
             sbTable.Append("<thread><tr><th style='width: 60px; text-align: center;'>STT</th><th>Mã Ngành</th><th>Tên Ngành</th><th>Tên Khoa</th><th style='width: 150px;'>Tùy Chỉnh</th></tr></thread>");
             sbTable.Append("<tbody>");
+            var query1 = from nh in nganh
+                         join kh in khoa on nh.MaKhoa equals kh.MaKhoa
+                         where ((nh.MaNganh.Contains(key) || nh.TenNganh.Contains(key)) && nh.MaKhoa.Equals(drlKhoa.SelectedValue))
+                         orderby nh.MaKhoa
+                         select new
+                         {
+                             STT = nh.NganhHocID,
+                             nh.MaNganh,
+                             nh.TenNganh,
+                             kh.TenKhoa
+                         };
+            var query2 = from nh in nganh
+                        join kh in khoa on nh.MaKhoa equals kh.MaKhoa
+                        where (nh.MaNganh.Contains(key) || nh.TenNganh.Contains(key))
+                        orderby nh.MaKhoa
+                        select new
+                        {
+                            STT = nh.NganhHocID,
+                            nh.MaNganh,
+                            nh.TenNganh,
+                            kh.TenKhoa
+                        };
             if (drlKhoa.SelectedValue != "")
             {
-                var query = from nh in nganh
-                            join kh in khoa on nh.MaKhoa equals kh.MaKhoa
-                            where ((nh.MaNganh.Contains(key) || nh.TenNganh.Contains(key)) && nh.MaKhoa.Equals(drlKhoa.SelectedValue))
-                            orderby nh.MaKhoa
-                            select new
-                            {
-                                STT = nh.NganhHocID,
-                                nh.MaNganh,
-                                nh.TenNganh,
-                                kh.TenKhoa
-                            };
+                var query = query1;
                 if (query.Count() > 0)
                 {
                     int i = 0;
@@ -62,17 +74,7 @@ namespace Net2.Forms
             }
             else
             {
-                var query = from nh in nganh
-                            join kh in khoa on nh.MaKhoa equals kh.MaKhoa
-                            where (nh.MaNganh.Contains(key) || nh.TenNganh.Contains(key))
-                            orderby nh.MaKhoa
-                            select new
-                            {
-                                STT = nh.NganhHocID,
-                                nh.MaNganh,
-                                nh.TenNganh,
-                                kh.TenKhoa
-                            };
+                var query = query2;
                 if (query.Count() > 0)
                 {
                     int i = 0;
@@ -88,7 +90,8 @@ namespace Net2.Forms
                         sbTable.Append("</tr>");
                     }
                 }
-            }            
+            }
+            
             sbTable.Append("</tbody>");
             sbTable.Append("</table >");
             tblNganh.Controls.Add(new Literal { Text = sbTable.ToString() });
@@ -127,6 +130,13 @@ namespace Net2.Forms
         protected void drlKhoa_TextChanged(object sender, EventArgs e)
         {
             btnSearch_Click(sender, e);
+        }
+        protected void btnReset_Click(Object sender, EventArgs e)
+        {
+            txtSearchNganh.Text = "";
+            drlKhoa.SelectedValue = "";
+            DisplayOnTable("");
+            txtSearchNganh.Focus();
         }
     }
 }

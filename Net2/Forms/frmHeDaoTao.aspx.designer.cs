@@ -10,43 +10,34 @@
 namespace Net2.Forms {
     
     
-    public partial class frmNganhHoc {
+    public partial class frmHeDaoTao {
         
         /// <summary>
-        /// pnlSearchNganh control.
+        /// pnlSearchHeDaoTao control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Panel pnlSearchNganh;
+        protected global::System.Web.UI.WebControls.Panel pnlSearchHeDaoTao;
         
         /// <summary>
-        /// txtSearchNganh control.
+        /// txtSearchHeDaoTao control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtSearchNganh;
+        protected global::System.Web.UI.WebControls.TextBox txtSearchHeDaoTao;
         
         /// <summary>
-        /// btnSearchNganh control.
+        /// btnSearchHeDaoTao control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton btnSearchNganh;
-        
-        /// <summary>
-        /// drlKhoa control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList drlKhoa;
+        protected global::System.Web.UI.WebControls.LinkButton btnSearchHeDaoTao;
         
         /// <summary>
         /// btlReset control.
@@ -67,12 +58,12 @@ namespace Net2.Forms {
         protected global::System.Web.UI.WebControls.Button btnThem;
         
         /// <summary>
-        /// tblNganh control.
+        /// tblHeDaoTao control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.PlaceHolder tblNganh;
+        protected global::System.Web.UI.WebControls.PlaceHolder tblHeDaoTao;
     }
 }

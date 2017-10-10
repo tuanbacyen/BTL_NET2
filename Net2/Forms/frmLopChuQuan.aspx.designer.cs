@@ -10,34 +10,34 @@
 namespace Net2.Forms {
     
     
-    public partial class frmNganhHoc {
+    public partial class frmLopChuQuan {
         
         /// <summary>
-        /// pnlSearchNganh control.
+        /// pnlSearchLop control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Panel pnlSearchNganh;
+        protected global::System.Web.UI.WebControls.Panel pnlSearchLop;
         
         /// <summary>
-        /// txtSearchNganh control.
+        /// txtSearchLop control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtSearchNganh;
+        protected global::System.Web.UI.WebControls.TextBox txtSearchLop;
         
         /// <summary>
-        /// btnSearchNganh control.
+        /// btnSearchLop control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton btnSearchNganh;
+        protected global::System.Web.UI.WebControls.LinkButton btnSearchLop;
         
         /// <summary>
         /// drlKhoa control.
@@ -47,6 +47,24 @@ namespace Net2.Forms {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.DropDownList drlKhoa;
+        
+        /// <summary>
+        /// drlNganh control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList drlNganh;
+        
+        /// <summary>
+        /// drlHeDaoTao control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList drlHeDaoTao;
         
         /// <summary>
         /// btlReset control.
@@ -67,12 +85,12 @@ namespace Net2.Forms {
         protected global::System.Web.UI.WebControls.Button btnThem;
         
         /// <summary>
-        /// tblNganh control.
+        /// tblLop control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.PlaceHolder tblNganh;
+        protected global::System.Web.UI.WebControls.PlaceHolder tblLop;
     }
 }

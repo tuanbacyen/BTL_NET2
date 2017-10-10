@@ -67,14 +67,19 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Forms\frmHeDaoTao.aspx" />
+    <Content Include="Forms\frmHeDaoTaoCU.aspx" />
     <Content Include="Forms\frmHome.aspx" />
     <Content Include="Forms\frmKhoaChuQuan.aspx" />
     <Content Include="Forms\frmKhoaChuQuanCU.aspx" />
+    <Content Include="Forms\frmLopChuQuan.aspx" />
+    <Content Include="Forms\frmLopChuQuanCU.aspx" />
     <Content Include="Forms\frmNganhHoc.aspx" />
     <Content Include="Forms\frmNganhHocCU.aspx" />
     <Content Include="Forms\frmMaster.Master" />
     <Content Include="Forms\frmSoDoan.aspx" />
     <Content Include="Forms\frmSoDoanCU.aspx" />
+    <Content Include="frmLopChuQuan.aspx" />
     <Content Include="Model\QuanLyDoanVien.dbml">
       <Generator>MSLinqToSQLGenerator</Generator>
       <LastGenOutput>QuanLyDoanVien.designer.cs</LastGenOutput>
@@ -1266,6 +1271,20 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ConnectDatabase\SqlHelper.cs" />
+    <Compile Include="Forms\frmHeDaoTao.aspx.cs">
+      <DependentUpon>frmHeDaoTao.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forms\frmHeDaoTao.aspx.designer.cs">
+      <DependentUpon>frmHeDaoTao.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmHeDaoTaoCU.aspx.cs">
+      <DependentUpon>frmHeDaoTaoCU.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forms\frmHeDaoTaoCU.aspx.designer.cs">
+      <DependentUpon>frmHeDaoTaoCU.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Forms\frmHome.aspx.cs">
       <DependentUpon>frmHome.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -1286,6 +1305,20 @@
     </Compile>
     <Compile Include="Forms\frmKhoaChuQuanCU.aspx.designer.cs">
       <DependentUpon>frmKhoaChuQuanCU.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmLopChuQuan.aspx.cs">
+      <DependentUpon>frmLopChuQuan.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forms\frmLopChuQuan.aspx.designer.cs">
+      <DependentUpon>frmLopChuQuan.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmLopChuQuanCU.aspx.cs">
+      <DependentUpon>frmLopChuQuanCU.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forms\frmLopChuQuanCU.aspx.designer.cs">
+      <DependentUpon>frmLopChuQuanCU.aspx</DependentUpon>
     </Compile>
     <Compile Include="Forms\frmMaster.Master.cs">
       <DependentUpon>frmMaster.Master</DependentUpon>
@@ -1321,6 +1354,13 @@
     </Compile>
     <Compile Include="Forms\frmSoDoanCU.aspx.designer.cs">
       <DependentUpon>frmSoDoanCU.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmLopChuQuan.aspx.cs">
+      <DependentUpon>frmLopChuQuan.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmLopChuQuan.aspx.designer.cs">
+      <DependentUpon>frmLopChuQuan.aspx</DependentUpon>
     </Compile>
     <Compile Include="Model\QuanLyDoanVien.designer.cs">
       <AutoGen>True</AutoGen>
