@@ -15,22 +15,26 @@
                     <asp:TextBox ID="txtMaKhoa" runat="server" CssClass="form-control"></asp:TextBox>
                     <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ErrorMessage="Mã khoa không đc bỏ trống" ControlToValidate="txtMaKhoa" ForeColor="Red" ValidationGroup="error" Font-Italic="True"></asp:RequiredFieldValidator>
                     <br />
-                    <br />
                     <p><b>Tên khoa: </b></p>
                     <asp:TextBox ID="txtTenKhoa" runat="server" CssClass="form-control"></asp:TextBox>
                     <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ErrorMessage="Tên khoa không đc bỏ trống" ControlToValidate="txtTenKhoa" ForeColor="Red" ValidationGroup="error" Font-Italic="True"></asp:RequiredFieldValidator>
 
 
-                    <table style="max-width: 300px; margin: auto; margin-top: 15px;">
+                    <table style="max-width: 100%; margin: auto; margin-top: 15px; border-spacing: 10px;">
                         <tr>
-                            <td style="width: 150px">
+                            <td style="width: 30%;">
                                 <div style="width: 95%; float: left;">
-                                    <asp:Button ID="btnThem" runat="server" Text="Lưu" CssClass="btn btn-lg btn-success btn-block" OnClick="btnThem_Click" ValidationGroup="error" />
+                                    <asp:Button ID="btnThem" runat="server" Text="Lưu" CssClass="btn btn-lg btn-block btn-success" OnClick="btnThem_Click" ValidationGroup="error" />
+                                </div>                                
+                            </td>
+                            <td style="width: 30%;">
+                                <div style="width: 95%; float: left;">
+                                    <asp:Button ID="btnXoa" runat="server" Text="Xóa" CssClass="btn btn-lg btn-block btn-danger" OnClick="btnXoa_Click" Enabled="False" />
                                 </div>
                             </td>
-                            <td style="width: 150px;">
-                                <div style="width: 95%; float: right;">
-                                    <asp:Button ID="Button1" runat="server" Text="Hủy" CssClass="btn btn-lg btn-danger btn-block" PostBackUrl="~/Forms/frmKhoaChuQuan.aspx" />
+                            <td style="width: 30%;">
+                                <div style="width: 95%; float: left;">
+                                    <asp:Button ID="btnHuy" runat="server" Text="Hủy" CssClass="btn btn-lg btn-block btn-default" PostBackUrl="~/Forms/frmKhoaChuQuan.aspx" />
                                 </div>
                             </td>
                         </tr>

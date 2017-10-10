@@ -73,6 +73,7 @@
     <Content Include="Forms\frmNganhHoc.aspx" />
     <Content Include="Forms\frmNganhHocCU.aspx" />
     <Content Include="Forms\frmMaster.Master" />
+    <Content Include="Images\pngSearch.png" />
     <Content Include="Model\QuanLyDoanVien.dbml">
       <Generator>MSLinqToSQLGenerator</Generator>
       <LastGenOutput>QuanLyDoanVien.designer.cs</LastGenOutput>
@@ -104,6 +105,7 @@
     <Content Include="Styles\less\sb-admin-2.less" />
     <Content Include="Styles\less\variables.less" />
     <Content Include="Styles\Scripts\jquery-1.10.2.min.map" />
+    <Content Include="Styles\tdhCss.css" />
     <Content Include="Styles\vendor\bootstrap-social\bootstrap-social.less" />
     <Content Include="Styles\vendor\bootstrap-social\bootstrap-social.scss" />
     <Content Include="Styles\vendor\bootstrap\fonts\glyphicons-halflings-regular.eot" />
@@ -1314,7 +1316,6 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Images\" />
     <Folder Include="View\" />
   </ItemGroup>
   <ItemGroup>
