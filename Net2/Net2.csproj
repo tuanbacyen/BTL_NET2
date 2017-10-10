@@ -73,6 +73,8 @@
     <Content Include="Forms\frmNganhHoc.aspx" />
     <Content Include="Forms\frmNganhHocCU.aspx" />
     <Content Include="Forms\frmMaster.Master" />
+    <Content Include="Forms\frmSoDoan.aspx" />
+    <Content Include="Forms\frmSoDoanCU.aspx" />
     <Content Include="Model\QuanLyDoanVien.dbml">
       <Generator>MSLinqToSQLGenerator</Generator>
       <LastGenOutput>QuanLyDoanVien.designer.cs</LastGenOutput>
@@ -1305,6 +1307,20 @@
     </Compile>
     <Compile Include="Forms\frmNganhHocCU.aspx.designer.cs">
       <DependentUpon>frmNganhHocCU.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmSoDoan.aspx.cs">
+      <DependentUpon>frmSoDoan.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forms\frmSoDoan.aspx.designer.cs">
+      <DependentUpon>frmSoDoan.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmSoDoanCU.aspx.cs">
+      <DependentUpon>frmSoDoanCU.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forms\frmSoDoanCU.aspx.designer.cs">
+      <DependentUpon>frmSoDoanCU.aspx</DependentUpon>
     </Compile>
     <Compile Include="Model\QuanLyDoanVien.designer.cs">
       <AutoGen>True</AutoGen>
