@@ -1,9 +1,9 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Forms/frmMaster.Master" AutoEventWireup="true" CodeBehind="frmKhoaChuQuanCU.aspx.cs" Inherits="Net2.Forms.frmKhoaChuQuanCU" %>
+﻿<%@ page title="" language="C#" masterpagefile="~/Forms/frmMaster.Master" autoeventwireup="true" codebehind="frmKhoaChuQuanCU.aspx.cs" inherits="Net2.Forms.frmKhoaChuQuanCU" %>
 
-<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+<asp:content id="Content1" contentplaceholderid="head" runat="server">
     <asp:Label ID="labTitle" runat="server" Text="Thêm Mới Khoa"></asp:Label>
-</asp:Content>
-<asp:Content ID="Content2" ContentPlaceHolderID="content" runat="server">
+</asp:content>
+<asp:content id="Content2" contentplaceholderid="content" runat="server">
     <div class="row">
         <div class="col-lg-4">
             <form class="panel panel-default" runat="server">
@@ -12,12 +12,12 @@
                 </div>
                 <div class="panel-body">
                     <p><b>Mã khoa: </b></p>
-                    <asp:TextBox ID="txtMaKhoa" runat="server" CssClass="form-control"></asp:TextBox>
-                    <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ErrorMessage="Mã khoa không đc bỏ trống" ControlToValidate="txtMaKhoa" ForeColor="Red" ValidationGroup="error" Font-Italic="True"></asp:RequiredFieldValidator>
+                        <asp:TextBox ID="txtMaKhoa" runat="server" CssClass="form-control"></asp:TextBox>
+                        <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ErrorMessage="Mã khoa không đc bỏ trống" ControlToValidate="txtMaKhoa" ForeColor="Red" ValidationGroup="error" Font-Italic="True"></asp:RequiredFieldValidator>
                     <br />
                     <p><b>Tên khoa: </b></p>
-                    <asp:TextBox ID="txtTenKhoa" runat="server" CssClass="form-control"></asp:TextBox>
-                    <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ErrorMessage="Tên khoa không đc bỏ trống" ControlToValidate="txtTenKhoa" ForeColor="Red" ValidationGroup="error" Font-Italic="True"></asp:RequiredFieldValidator>
+                        <asp:TextBox ID="txtTenKhoa" runat="server" CssClass="form-control"></asp:TextBox>
+                        <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ErrorMessage="Tên khoa không đc bỏ trống" ControlToValidate="txtTenKhoa" ForeColor="Red" ValidationGroup="error" Font-Italic="True"></asp:RequiredFieldValidator>
 
 
                     <table style="max-width: 100%; margin: auto; margin-top: 15px; border-spacing: 10px;">
@@ -43,4 +43,4 @@
             </form>
         </div>
     </div>
-</asp:Content>
+</asp:content>
