@@ -13,22 +13,49 @@ namespace Net2.Forms {
     public partial class frmNganhHoc {
         
         /// <summary>
-        /// txtSearch control.
+        /// pnlSearchNganh control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtSearch;
+        protected global::System.Web.UI.WebControls.Panel pnlSearchNganh;
         
         /// <summary>
-        /// btnSearch control.
+        /// txtSearchNganh control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnSearch;
+        protected global::System.Web.UI.WebControls.TextBox txtSearchNganh;
+        
+        /// <summary>
+        /// btnSearchNganh control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.LinkButton btnSearchNganh;
+        
+        /// <summary>
+        /// drlKhoa control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList drlKhoa;
+        
+        /// <summary>
+        /// btlReset control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btlReset;
         
         /// <summary>
         /// btnThem control.
@@ -40,12 +67,12 @@ namespace Net2.Forms {
         protected global::System.Web.UI.WebControls.Button btnThem;
         
         /// <summary>
-        /// tblKhoa control.
+        /// tblNganh control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.PlaceHolder tblKhoa;
+        protected global::System.Web.UI.WebControls.PlaceHolder tblNganh;
     }
 }

@@ -13,22 +13,40 @@ namespace Net2.Forms {
     public partial class frmKhoaChuQuan {
         
         /// <summary>
-        /// txtSearch control.
+        /// pnlSearchKhoa control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtSearch;
+        protected global::System.Web.UI.WebControls.Panel pnlSearchKhoa;
         
         /// <summary>
-        /// btnSearch control.
+        /// txtSearchKhoa control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnSearch;
+        protected global::System.Web.UI.WebControls.TextBox txtSearchKhoa;
+        
+        /// <summary>
+        /// btnSearchKhoa control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.LinkButton btnSearchKhoa;
+        
+        /// <summary>
+        /// btlReset control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btlReset;
         
         /// <summary>
         /// btnThem control.

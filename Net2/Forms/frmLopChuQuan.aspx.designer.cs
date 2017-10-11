@@ -10,52 +10,70 @@
 namespace Net2.Forms {
     
     
-    public partial class frmKhoaChuQuanCU {
+    public partial class frmLopChuQuan {
         
         /// <summary>
-        /// labTitle control.
+        /// pnlSearchLop control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label labTitle;
+        protected global::System.Web.UI.WebControls.Panel pnlSearchLop;
         
         /// <summary>
-        /// txtMaKhoa control.
+        /// txtSearchLop control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtMaKhoa;
+        protected global::System.Web.UI.WebControls.TextBox txtSearchLop;
         
         /// <summary>
-        /// RequiredFieldValidator1 control.
+        /// btnSearchLop control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator1;
+        protected global::System.Web.UI.WebControls.LinkButton btnSearchLop;
         
         /// <summary>
-        /// txtTenKhoa control.
+        /// drlKhoa control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtTenKhoa;
+        protected global::System.Web.UI.WebControls.DropDownList drlKhoa;
         
         /// <summary>
-        /// RequiredFieldValidator2 control.
+        /// drlNganh control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator2;
+        protected global::System.Web.UI.WebControls.DropDownList drlNganh;
+        
+        /// <summary>
+        /// drlHeDaoTao control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList drlHeDaoTao;
+        
+        /// <summary>
+        /// btlReset control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btlReset;
         
         /// <summary>
         /// btnThem control.
@@ -67,21 +85,12 @@ namespace Net2.Forms {
         protected global::System.Web.UI.WebControls.Button btnThem;
         
         /// <summary>
-        /// btnXoa control.
+        /// tblLop control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnXoa;
-        
-        /// <summary>
-        /// btnHuy control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnHuy;
+        protected global::System.Web.UI.WebControls.PlaceHolder tblLop;
     }
 }

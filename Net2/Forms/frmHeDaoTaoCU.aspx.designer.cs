@@ -10,7 +10,7 @@
 namespace Net2.Forms {
     
     
-    public partial class frmKhoaChuQuanCU {
+    public partial class frmHeDaoTaoCU {
         
         /// <summary>
         /// labTitle control.
@@ -22,13 +22,13 @@ namespace Net2.Forms {
         protected global::System.Web.UI.WebControls.Label labTitle;
         
         /// <summary>
-        /// txtMaKhoa control.
+        /// txtMaHeDaoTao control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtMaKhoa;
+        protected global::System.Web.UI.WebControls.TextBox txtMaHeDaoTao;
         
         /// <summary>
         /// RequiredFieldValidator1 control.
@@ -40,13 +40,13 @@ namespace Net2.Forms {
         protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator1;
         
         /// <summary>
-        /// txtTenKhoa control.
+        /// txtTenHeDaoTao control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtTenKhoa;
+        protected global::System.Web.UI.WebControls.TextBox txtTenHeDaoTao;
         
         /// <summary>
         /// RequiredFieldValidator2 control.
