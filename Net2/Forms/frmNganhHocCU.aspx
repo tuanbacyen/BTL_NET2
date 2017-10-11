@@ -1,6 +1,7 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Forms/frmMaster.Master" AutoEventWireup="true" CodeBehind="frmNganhHocCU.aspx.cs" Inherits="Net2.Forms.frmNganhHocCU" %>
+
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
-    <asp:Label ID="labTitle" runat="server" Text="Thêm Mới Ngàn"></asp:Label>
+    <asp:Label ID="labTitle" runat="server" Text="THÊM MỚI NGÀNH"></asp:Label>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="content" runat="server">
     <div class="row">
@@ -25,7 +26,7 @@
                             <td style="width: 30%;">
                                 <div style="width: 95%; float: left;">
                                     <asp:Button ID="btnThem" runat="server" Text="Lưu" CssClass="btn btn-lg btn-block btn-success" OnClick="btnThem_Click" ValidationGroup="error" />
-                                </div>                                
+                                </div>
                             </td>
                             <td style="width: 30%;">
                                 <div style="width: 95%; float: left;">
@@ -42,4 +43,5 @@
                 </div>
             </form>
         </div>
+    </div>
 </asp:Content>

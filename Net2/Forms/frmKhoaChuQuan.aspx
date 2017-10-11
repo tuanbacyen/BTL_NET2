@@ -1,7 +1,7 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Forms/frmMaster.Master" AutoEventWireup="true" CodeBehind="frmKhoaChuQuan.aspx.cs" Inherits="Net2.Forms.frmKhoaChuQuan" %>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="head" runat="server">
-    KHOA CHỦ QUẢN
+    QUẢN LÝ KHOA
 </asp:Content>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="content" runat="server">
@@ -16,7 +16,7 @@
                         <asp:Panel ID="pnlSearchKhoa" CssClass="input-group custom-search-form" runat="server" DefaultButton="btnSearchKhoa">
                             <asp:TextBox ID="txtSearchKhoa" runat="server" CssClass="form-control" placeholder="Từ khóa..."></asp:TextBox>
                             <span class="input-group-btn">
-                                <asp:LinkButton ID="btnSearchKhoa" CssClass="btn btn-default" OnClick="btnSearch_Click" runat="server"><i class="fa fa-search" aria-hidden="true"></i></asp:LinkButton>
+                                <asp:LinkButton ID="btnSearchKhoa" CssClass="btn btn-default btn-success" OnClick="btnSearch_Click" runat="server"><i class="fa fa-search" aria-hidden="true"></i></asp:LinkButton>
                             </span>
                         </asp:Panel>
                         <hr />

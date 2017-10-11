@@ -67,6 +67,8 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Forms\frmChucVu.aspx" />
+    <Content Include="Forms\frmChucVuCU.aspx" />
     <Content Include="Forms\frmHeDaoTao.aspx" />
     <Content Include="Forms\frmHeDaoTaoCU.aspx" />
     <Content Include="Forms\frmHome.aspx" />
@@ -79,6 +81,8 @@
     <Content Include="Forms\frmMaster.Master" />
     <Content Include="Forms\frmSoDoan.aspx" />
     <Content Include="Forms\frmSoDoanCU.aspx" />
+    <Content Include="Forms\frmTinhTrangHocTap.aspx" />
+    <Content Include="Forms\frmTinhTrangHocTapCU.aspx" />
     <Content Include="frmLopChuQuan.aspx" />
     <Content Include="Model\QuanLyDoanVien.dbml">
       <Generator>MSLinqToSQLGenerator</Generator>
@@ -89,6 +93,13 @@
       <DependentUpon>QuanLyDoanVien.dbml</DependentUpon>
     </None>
     <None Include="packages.config" />
+    <None Include="Scripts\jquery-3.2.1.intellisense.js" />
+    <Content Include="Scripts\colResizable-1.6.js" />
+    <Content Include="Scripts\colResizable-1.6.min.js" />
+    <Content Include="Scripts\jquery-3.2.1.js" />
+    <Content Include="Scripts\jquery-3.2.1.min.js" />
+    <Content Include="Scripts\jquery-3.2.1.slim.js" />
+    <Content Include="Scripts\jquery-3.2.1.slim.min.js" />
     <Content Include="Styles\dist\css\w3.css" />
     <Content Include="Styles\js\plugins\ckeditor\CHANGES.md" />
     <Content Include="Styles\js\plugins\ckeditor\LICENSE.md" />
@@ -110,6 +121,8 @@
     <Content Include="Styles\less\mixins.less" />
     <Content Include="Styles\less\sb-admin-2.less" />
     <Content Include="Styles\less\variables.less" />
+    <Content Include="Styles\Scripts\colResizable-1.6.js" />
+    <Content Include="Styles\Scripts\colResizable-1.6.min.js" />
     <Content Include="Styles\Scripts\jquery-1.10.2.min.map" />
     <Content Include="Styles\vendor\bootstrap-social\bootstrap-social.less" />
     <Content Include="Styles\vendor\bootstrap-social\bootstrap-social.scss" />
@@ -157,6 +170,8 @@
     <Content Include="Styles\vendor\font-awesome\scss\_spinning.scss" />
     <Content Include="Styles\vendor\font-awesome\scss\_stacked.scss" />
     <Content Include="Styles\vendor\font-awesome\scss\_variables.scss" />
+    <Content Include="Scripts\jquery-3.2.1.slim.min.map" />
+    <Content Include="Scripts\jquery-3.2.1.min.map" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -1271,6 +1286,20 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ConnectDatabase\SqlHelper.cs" />
+    <Compile Include="Forms\frmChucVu.aspx.cs">
+      <DependentUpon>frmChucVu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forms\frmChucVu.aspx.designer.cs">
+      <DependentUpon>frmChucVu.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmChucVuCU.aspx.cs">
+      <DependentUpon>frmChucVuCU.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forms\frmChucVuCU.aspx.designer.cs">
+      <DependentUpon>frmChucVuCU.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Forms\frmHeDaoTao.aspx.cs">
       <DependentUpon>frmHeDaoTao.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -1354,6 +1383,20 @@
     </Compile>
     <Compile Include="Forms\frmSoDoanCU.aspx.designer.cs">
       <DependentUpon>frmSoDoanCU.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmTinhTrangHocTap.aspx.cs">
+      <DependentUpon>frmTinhTrangHocTap.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forms\frmTinhTrangHocTap.aspx.designer.cs">
+      <DependentUpon>frmTinhTrangHocTap.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmTinhTrangHocTapCU.aspx.cs">
+      <DependentUpon>frmTinhTrangHocTapCU.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forms\frmTinhTrangHocTapCU.aspx.designer.cs">
+      <DependentUpon>frmTinhTrangHocTapCU.aspx</DependentUpon>
     </Compile>
     <Compile Include="frmLopChuQuan.aspx.cs">
       <DependentUpon>frmLopChuQuan.aspx</DependentUpon>

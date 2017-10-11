@@ -174,11 +174,11 @@ namespace Net2.Forms
                     sbTable.Append("<td style='text-align: center;'>" + i.ToString() + "</td>");
                     sbTable.Append("<td>" + item.MaLop + "</td>");
                     sbTable.Append("<td>" + item.TenLop + "</td>");
-                    sbTable.Append("<td>" + item.SiSo + "</td>");
+                    sbTable.Append("<td style='text-align: center;'>" + item.SiSo + "</td>");
                     sbTable.Append("<td>" + item.TenHeDaoTao + "</td>");
                     sbTable.Append("<td>" + item.TenNganh + "</td>");
                     sbTable.Append("<td>" + item.TenKhoa + "</td>");
-                    sbTable.Append("<td>" + item.KhoaHoc + "</td>");
+                    sbTable.Append("<td style='text-align: center;'>" + item.KhoaHoc + "</td>");
                     sbTable.Append("<td><a href='frmLopChuQuanCU.aspx?id=" + item.MaLop + "' class='btn btn-block btn-default'>Tùy Chỉnh</a>");
                     sbTable.Append("</tr>");
                 }

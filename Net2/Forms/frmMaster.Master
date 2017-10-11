@@ -38,7 +38,6 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-
 </head>
 
 <body>
@@ -84,30 +83,27 @@
                                     <a href="frmNganhHoc.aspx">Ngành Học</a>
                                 </li>
                                 <li>
-                                    <a href="#">Chức Vụ</a>
+                                    <a href="frmChucVu.aspx">Chức Vụ</a>
                                 </li>
                                 <li>
                                     <a href="frmHeDaoTao.aspx">Loại Hệ Đào Tạo</a>
                                 </li>
                                 <li>
-                                    <a href="#">Tình Trạng Học Tập</a>
+                                    <a href="frmTinhTrangHocTap.aspx">Tình Trạng Học Tập</a>
                                 </li>
                                 <li>
                                     <a href="frmLopChuQuan.aspx">Quản Lý Lớp</a>
                                 </li>
-                                <li>
-                                    <a href="#">Lớp Dự Bị Đảng</a>
-                                </li>
                             </ul>
                         </li>
                         <li>
-                            <a href="#"><i class="fa fa-graduation-cap fa-fw">&nbsp;</i>Quản Lý Sinh Viên<span class="fa arrow"></span></a>
+                            <a href="#"><i class="fa fa-graduation-cap fa-fw">&nbsp;</i>Quản Lý Sinh Viên - Cán Bộ<span class="fa arrow"></span></a>
                             <ul class="nav nav-second-level">
                                 <li>
                                     <a href="#">Thông Tin Sinh Viên</a>
                                 </li>
                                 <li>
-                                    <a href="#">Ngành Học</a>
+                                    <a href="#">Cán Bộ</a>
                                 </li>
                             </ul>
                         </li>
@@ -127,7 +123,7 @@
                                     <a href="#">Chuyển Sinh Hoạt Đoàn</a>
                                 </li>
                                 <li>
-                                    <a href="#">Cán Bộ</a>
+                                    <a href="#">Lớp Dự Bị Đảng</a>
                                 </li>
                             </ul>
                         </li>
@@ -190,14 +186,13 @@
     <script src="../Styles/vendor/morrisjs/morris.min.js"></script>
     <script src="../Styles/data/morris-data.js"></script>
 
-    
+
     <script src="../Styles/vendor/datatables/js/jquery.dataTables.min.js"></script>
     <script src="../Styles/vendor/datatables-plugins/dataTables.bootstrap.min.js"></script>
     <script src="../Styles/vendor/datatables-responsive/dataTables.responsive.js"></script>
 
     <!-- Custom Theme JavaScript -->
     <script src="../Styles/dist/js/sb-admin-2.js"></script>
-
 </body>
 
 </html>

@@ -1,9 +1,8 @@
-﻿<%@ page title="" language="C#" masterpagefile="~/Forms/frmMaster.Master" autoeventwireup="true" codebehind="frmKhoaChuQuanCU.aspx.cs" inherits="Net2.Forms.frmKhoaChuQuanCU" %>
-
-<asp:content id="Content1" contentplaceholderid="head" runat="server">
-    <asp:Label ID="labTitle" runat="server" Text="THÊM MỚI KHOA"></asp:Label>
-</asp:content>
-<asp:content id="Content2" contentplaceholderid="content" runat="server">
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Forms/frmMaster.Master" AutoEventWireup="true" CodeBehind="frmChucVuCU.aspx.cs" Inherits="Net2.Forms.frmChucVuCU" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+        <asp:Label ID="labTitle" runat="server" Text="THÊM MƠI CHỨC VỤ"></asp:Label>
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="content" runat="server">
     <div class="row">
         <div class="col-lg-4">
             <form class="panel panel-default" runat="server">
@@ -11,13 +10,13 @@
                     <h4 style="float: left;"><i class="fa fa-file-text-o fa-fw">&nbsp;</i>Thông Tin Khoa </h4>
                 </div>
                 <div class="panel-body">
-                    <p><b>Mã khoa: </b></p>
-                        <asp:TextBox ID="txtMaKhoa" runat="server" CssClass="form-control"></asp:TextBox>
-                        <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ErrorMessage="Mã khoa không đc bỏ trống" ControlToValidate="txtMaKhoa" ForeColor="Red" ValidationGroup="error" Font-Italic="True"></asp:RequiredFieldValidator>
+                    <p><b>Mã chức vụ: </b></p>
+                        <asp:TextBox ID="txtMaChucVu" runat="server" CssClass="form-control"></asp:TextBox>
+                        <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ErrorMessage="Mã chức vụ không đc bỏ trống" ControlToValidate="txtMaChucVu" ForeColor="Red" ValidationGroup="error" Font-Italic="True"></asp:RequiredFieldValidator>
                     <br />
-                    <p><b>Tên khoa: </b></p>
-                        <asp:TextBox ID="txtTenKhoa" runat="server" CssClass="form-control"></asp:TextBox>
-                        <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ErrorMessage="Tên khoa không đc bỏ trống" ControlToValidate="txtTenKhoa" ForeColor="Red" ValidationGroup="error" Font-Italic="True"></asp:RequiredFieldValidator>
+                    <p><b>Chức vụ: </b></p>
+                        <asp:TextBox ID="txtTenChucVu" runat="server" CssClass="form-control"></asp:TextBox>
+                        <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ErrorMessage="Tên chức vụ không đc bỏ trống" ControlToValidate="txtTenChucVu" ForeColor="Red" ValidationGroup="error" Font-Italic="True"></asp:RequiredFieldValidator>
 
 
                     <table style="max-width: 100%; margin: auto; margin-top: 15px; border-spacing: 10px;">
@@ -34,7 +33,7 @@
                             </td>
                             <td style="width: 30%;">
                                 <div style="width: 95%; float: left;">
-                                    <asp:Button ID="btnHuy" runat="server" Text="Hủy" CssClass="btn btn-lg btn-block btn-default" PostBackUrl="~/Forms/frmKhoaChuQuan.aspx" />
+                                    <asp:Button ID="btnHuy" runat="server" Text="Hủy" CssClass="btn btn-lg btn-block btn-default" PostBackUrl="~/Forms/frmChucVu.aspx" />
                                 </div>
                             </td>
                         </tr>
@@ -43,4 +42,4 @@
             </form>
         </div>
     </div>
-</asp:content>
+</asp:Content>
